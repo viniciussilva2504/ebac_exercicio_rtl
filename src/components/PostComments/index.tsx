@@ -26,7 +26,14 @@ const Post = () => {
                     ))}
             </ul>
                 <form onSubmit={handleAddComment} className={styles['post-comments-form']} data-testid="comment-form">
-                    <textarea value={tempComment} onChange={e => setTempComment(e.target.value)} required className={styles['post-comments-form-textarea']} data-testid="comment-textarea" />
+                    <textarea
+                        value={tempComment}
+                        onChange={e => setTempComment(e.target.value)}
+                        required
+                        className={styles['post-comments-form-textarea']}
+                        data-testid="comment-textarea"
+                        maxLength={100}
+                    />
                     <button type="submit" className={styles['post-comments-form-button']} data-testid="comment-submit">
                         Comentar
                     </button>

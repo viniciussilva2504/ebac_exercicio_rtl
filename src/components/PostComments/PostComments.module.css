@@ -1,3 +1,19 @@
+@media (max-width: 600px) {
+    .post-comments-form-textarea {
+        width: 95vw;
+        max-width: 95vw;
+        margin: 0 2.5vw 8px 2.5vw;
+        font-size: 16px;
+        min-height: 60px;
+    }
+    .post-comments-form {
+        padding: 0;
+    }
+    .post-comment {
+        font-size: 14px;
+        padding: 8px 8px;
+    }
+}
 .post-comments-form-textarea {
     color: #333;
     font-size: 14px;
@@ -6,7 +22,8 @@
 }
 
 .post-comments {
-    
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .post-comment {
@@ -14,7 +31,7 @@
     font-size: 12px;
     line-height: 20px;
     background-color: #ffff9f;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 8px;
     margin-bottom: 8px;
 }
@@ -24,16 +41,26 @@
 }
 
 .post-comments-form {
-    margin-top: 16px;
-    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .post-comments-form-textarea {
     display: block;
     resize: none;
-    width: 100%;
-    margin-bottom: 8px;
-    padding: 8px 16px;
+    width: 400px;
+    max-width: none;
+    margin: 0 10px 8px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    min-height: 80px;
 }
 
 .post-comments-form-button {
